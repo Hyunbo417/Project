@@ -49,7 +49,7 @@ def get_team_profit(data):
 
 team_profit_df = get_team_profit(df)
 
-col1.metric("Total Matches", f"{total_matches}개")
+col1.metric("Total Matches", f"{total_matches}")
 col2.metric("Correct Rate", f"{correct_rate:.1f}%")
 col3.metric("Most Upset Team", team_profit_df.iloc[0]['Team'])
 col4.metric("Most Profit", f"+{team_profit_df.iloc[0]['Profit']:.2f}")
