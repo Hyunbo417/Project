@@ -22,7 +22,7 @@ df['Is_Upset'] = ~df['Favorite_Won']
 df['Total_Cards'] = df['HY'] + df['AY'] + df['HR'] + df['AR']
 df['Total_Fouls'] = df['HF'] + df['AF']
 
-st.sidebar.header("🎮 Dashboard Control")
+st.sidebar.header("Dashboard Control")
 selected_team = st.sidebar.selectbox("Select Team", ["Whole Team"] + sorted(df['HomeTeam'].unique().tolist()))
 round_range = st.sidebar.slider("Round Range Select", 1, 38, (1, 38))
 
@@ -59,7 +59,7 @@ col3.metric("Most Upset Team", team_profit_df.iloc[0]['Team'])
 col4.metric("Most Profit", f"+{team_profit_df.iloc[0]['Profit']:.2f}")
 
 # Visualization
-tab1, tab2, tab3 = st.tabs(["📈 Profit Analysis", "📊 Statics", "👨‍⚖️ Refree"])
+tab1, tab2, tab3 = st.tabs(["Profit Analysis", "Statics", "Refree"])
 
 with tab1:
     # Total Profit calculate
