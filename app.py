@@ -113,8 +113,6 @@ with tab3:
                                labels={'Upset_prob': 'Upset Probability (%)', 'Mean_Fouls': 'Mean Fouls'})
     st.plotly_chart(fig_ref_upset, use_container_width=True)
 
-    st.info("💡 팁: 산점도에서 우측 상단에 위치한 심판일수록 경기를 엄격하게 운영하며, 해당 심판의 경기에서 예상 밖의 결과가 자주 나왔음을 의미합니다.")
-
 
 # Data Table
 st.divider()
