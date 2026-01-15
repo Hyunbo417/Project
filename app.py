@@ -84,7 +84,7 @@ with tab2:
     st.plotly_chart(fig_bar, use_container_width=True)
 
 with tab3:
-    st.subheader("👨‍⚖️ Refree Analysis (Atleast 5 games)")
+    st.subheader("Refree Analysis (Atleast 5 games)")
     
     # Statics by Refree
     ref_stats = df.groupby('Referee').agg({
