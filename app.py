@@ -17,6 +17,7 @@ df['B365A_P'] = 1 / df['B365A']
 # Favorit Define
 df['Favorite'] = df[['B365H_P', 'B365D_P', 'B365A_P']].idxmax(axis=1).str[4]
 df['Favorite_Won'] = df['Favorite'] == df['FTR']
+df['Is_Upset'] = ~df['Favorite_Won']
 
 df['Total_Cards'] = df['HY'] + df['AY'] + df['HR'] + df['AR']
 df['Total_Fouls'] = df['HF'] + df['AF']
